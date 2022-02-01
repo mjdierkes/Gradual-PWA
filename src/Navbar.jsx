@@ -1,12 +1,13 @@
 import smallLogo from "./assets/gradualIconSmall.png"
+import "./styles/css/navbarStyles.css"
 
 export default function Navbar() {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
   <div class="container-fluid">
   <a class="navbar-brand" href="#">
-      <img src={smallLogo} alt="" width="30" height="30" class="d-inline-block align-text-top"/>
-      Gradual
+      <img src={smallLogo} alt="" width="30" height="30" className="d-inline-block align-text-top logo-img"/>
+      <strong>Gradual</strong>
 </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
