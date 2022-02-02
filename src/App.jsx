@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from './Navbar';
 import IntroHero from './IntroHero';
+import FeaturesHero from './FeaturesHero';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
 
       <IntroHero />
+      <FeaturesHero />
     </main>
   );
 }

@@ -13,7 +13,7 @@ export default function IntroHero() {
         <img src={pixelMockup1} class="d-block mx-lg-auto img-fluid androidMockupImage" alt="Bootstrap Themes" loading="lazy"/>
       </div>
       <div class="col-lg-6 m-auto">
-        <p class="display-5 fw-bold lh-1 mb-3">The power of HAC at your homescreen!</p>
+        <p class="display-5 fw-bold mb-3">The power of HAC at your homescreen!</p>
         <p class="lead">Gradual allows you to access grades, schedules, GPAs and so much more with the tap of a button!</p>
         <p class="fst-italic">Gradual stores absolutely no user information and is open source for developers to contribute.</p>
         <div class="d-flex appStoreBadgeContainer">

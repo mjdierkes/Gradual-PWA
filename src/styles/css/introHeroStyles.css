@@ -6,12 +6,15 @@
   object-fit: cover;
 }
 
-.appStoreBadge {
+.appStoreBadgeContainer {
+  align-items: center;
+}
+.appStoreBadgeContainer .appStoreBadge {
   width: 150px !important;
   object-fit: cover !important;
   margin: 0 15px;
 }
-.appStoreBadge:first-of-type {
+.appStoreBadgeContainer .appStoreBadge:first-of-type {
   margin-left: 0;
 }
 

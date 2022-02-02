@@ -7,14 +7,18 @@
     }
 }
 
-.appStoreBadge {
-    width: 150px !important;
-    object-fit: cover !important;
+.appStoreBadgeContainer {
+    align-items: center;
 
-    margin: 0 15px;
-
-    &:first-of-type {
-        margin-left: 0;
+    .appStoreBadge {
+        width: 150px !important;
+        object-fit: cover !important;
+    
+        margin: 0 15px;
+    
+        &:first-of-type {
+            margin-left: 0;
+        }
     }
 }
 
