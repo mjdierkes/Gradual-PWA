@@ -3,9 +3,9 @@ import "./styles/css/navbarStyles.css"
 
 export default function Navbar() {
     return (
-        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+        <nav class="navbar navbar-expand-lg bg-success">
   <div class="container-fluid">
-  <a class="navbar-brand" href="#">
+  <a class="navbar-brand nav-link" href="#">
       <img src={smallLogo} alt="" width="30" height="30" className="d-inline-block align-text-top logo-img"/>
       <strong>Gradual</strong>
 </a>
@@ -21,15 +21,15 @@ export default function Navbar() {
           <a class="nav-link" href="#">Products</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="#">Developers</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About</a>
         </li>
       </ul>
+
+      <a href="" class="nav-link signInLink">Sign in with HAC</a>
+
     </div>
   </div>
 </nav>

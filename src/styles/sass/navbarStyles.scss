@@ -1,7 +1,23 @@
-.logo-img {
-    margin-right: 10px !important;
+@import "globals";
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+
+    .logo-img {
+        margin-right: 10px !important;
+    }
 }
  
-a {
+.nav-link {
     color: white !important;
+
+    &:hover {
+        color: $mainGreen !important;
+    }
+}
+
+.signInLink {
+    margin-left: auto;
+    padding-left: 0px !important;
 }

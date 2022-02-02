@@ -1,9 +1,21 @@
-.logo-img {
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand .logo-img {
   margin-right: 10px !important;
 }
 
-a {
+.nav-link {
   color: white !important;
+}
+.nav-link:hover {
+  color: #01C800 !important;
+}
+
+.signInLink {
+  margin-left: auto;
+  padding-left: 0px !important;
 }
 
 /*# sourceMappingURL=navbarStyles.css.map */

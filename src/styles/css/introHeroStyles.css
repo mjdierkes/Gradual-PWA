@@ -1,0 +1,37 @@
+.mockupImageContainer {
+  margin: auto;
+}
+.mockupImageContainer img {
+  width: 300px !important;
+  object-fit: cover;
+}
+
+.appStoreBadge {
+  width: 150px !important;
+  object-fit: cover !important;
+  margin: 0 15px;
+}
+.appStoreBadge:first-of-type {
+  margin-left: 0;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .androidMockupImage {
+    display: none !important;
+  }
+}
+@media (max-width: 992px) {
+  .androidMockupImage {
+    display: none !important;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .appStoreBadgeContainer {
+    justify-content: center;
+  }
+}
+
+/*# sourceMappingURL=introHeroStyles.css.map */

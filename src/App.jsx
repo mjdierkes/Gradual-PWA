@@ -1,9 +1,14 @@
 import React from 'react';
 import Navbar from './Navbar';
+import IntroHero from './IntroHero';
 
 function App() {
   return (
-    <Navbar />
+    <main>
+      <Navbar />
+
+      <IntroHero />
+    </main>
   );
 }
 
