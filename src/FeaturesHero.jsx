@@ -10,14 +10,14 @@ export default function FeaturesHero() {
             <img src={smallLogo} alt="" />
         </div>
         <h2>Live Grades</h2>
-        <p>View your grades as soon as your teacher updates them!</p>
+        <p class="text-start">View your grades as soon as your teacher updates them!</p>
       </div>
       <div class="feature col">
         <div class="feature-icon bg-gradient">
             <img src={smallLogo} alt="" />
         </div>
         <h2>Real-time GPA</h2>
-        <p>Rather than waiting for your GPA to update in HAC, Gradual allows you to view your GPA with your current grades factored in!</p>
+        <p class="text-start">Rather than waiting for your GPA to update in HAC, Gradual allows you to view your GPA with your current grades factored in!</p>
         
       </div>
       <div class="feature col">
@@ -25,7 +25,7 @@ export default function FeaturesHero() {
             <img src={smallLogo} alt="" />
         </div>
         <h2>Predicted class grades</h2>
-        <p>Gradual's 'What-if' calculator allows you to predict your average in a class by manipulating assignment grades.</p>
+        <p class="text-start">Gradual's 'What-if' calculator allows you to predict your average in a class by manipulating assignment grades.</p>
 
       </div>
     </div>

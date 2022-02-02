@@ -1,3 +1,8 @@
+* {
+  overflow-x: hidden;
+  line-height: 1.5 !important;
+}
+
 .mockupImageContainer {
   margin: auto;
 }
