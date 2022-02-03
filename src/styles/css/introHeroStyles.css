@@ -1,6 +1,14 @@
+main {
+  height: 100%;
+}
+
 * {
   overflow-x: hidden;
   line-height: 1.5 !important;
+}
+
+.logo-img {
+  margin: 0;
 }
 
 .mockupImageContainer {

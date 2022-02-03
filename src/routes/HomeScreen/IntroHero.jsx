@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import iphoneMockup1 from "../../assets/iphoneMockup1.png";
 import pixelMockup1 from "../../assets/pixelMockup1.png";
 import iosAppStoreBadge from "../../assets/iosAppStoreBadge.png";
@@ -17,8 +19,8 @@ export default function IntroHero() {
         <p class="lead">Gradual allows you to access grades, schedules, GPAs and so much more with the tap of a button!</p>
         <p class="fst-italic">Gradual stores absolutely no user information and is open source for developers to contribute.</p>
         <div class="d-flex appStoreBadgeContainer">
-          <a href="/"><img src={iosAppStoreBadge} alt="ios app store badge" class="appStoreBadge"/></a>
-          <a href="/"><img src={androidDownloadBadge} alt="android download badge" class="appStoreBadge"/></a>
+          <Link to="/login"><img src={iosAppStoreBadge} alt="ios download badge" class="appStoreBadge"/></Link>
+          <Link to="/login"><img src={androidDownloadBadge} alt="android download badge" class="appStoreBadge"/></Link>
         </div>
       </div>
     </div>
