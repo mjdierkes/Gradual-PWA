@@ -3,10 +3,10 @@ import "./styles/css/navbarStyles.css"
 
 export default function Navbar() {
   return (
-    <nav class="navbar navbar-expand-lg bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container-fluid">
-        <a class="navbar-brand nav-link" href="#">
-          <img src={smallLogo} alt="" width="30" height="30" className="d-inline-block align-text-top logo-img" />
+        <a class="navbar-brand nav-link" href="/">
+          <img src={smallLogo} alt="gradual navbar logo" width="30" height="30" className="d-inline-block align-text-top logo-img" />
           <strong>Gradual</strong>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,17 +18,17 @@ export default function Navbar() {
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
+              <a class="nav-link" href="/">Products</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Developers</a>
+              <a class="nav-link" href="/">Developers</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="/">About</a>
             </li>
           </ul>
 
-          <a href="" class="nav-link signInLink">Sign in with HAC</a>
+          <a href="/" class="nav-link signInLink">Sign in with HAC</a>
 
         </div>
       </div>
