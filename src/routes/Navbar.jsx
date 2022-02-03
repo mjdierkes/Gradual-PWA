@@ -1,5 +1,7 @@
-import smallLogo from "./assets/gradualIconSmall.png"
-import "./styles/css/navbarStyles.css"
+import { Link } from 'react-router-dom'; 
+
+import smallLogo from "../assets/gradualIconSmall.png"
+import "../styles/css/navbarStyles.css";
 
 export default function Navbar() {
   return (
@@ -28,8 +30,7 @@ export default function Navbar() {
             </li>
           </ul>
 
-          <a href="/" class="nav-link signInLink">Sign in with HAC</a>
-
+          <Link class="nav-link signInLink" to="/login">Sign in with HAC</Link>
         </div>
       </div>
     </nav>

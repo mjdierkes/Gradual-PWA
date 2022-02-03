@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import App from './routes/HomeScreen/HomeScreen';
+import LoginScreen from "./routes/loginScreen/LoginScreen"
+
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}/>
+      <Route path="/login" element={<LoginScreen />}/>
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

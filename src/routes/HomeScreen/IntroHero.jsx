@@ -1,8 +1,8 @@
-import iphoneMockup1 from "./assets/iphoneMockup1.png";
-import pixelMockup1 from "./assets/pixelMockup1.png";
-import iosAppStoreBadge from "./assets/iosAppStoreBadge.png";
-import androidDownloadBadge from "./assets/androidDownloadBadge.png";
-import "./styles/css/introHeroStyles.css";
+import iphoneMockup1 from "../../assets/iphoneMockup1.png";
+import pixelMockup1 from "../../assets/pixelMockup1.png";
+import iosAppStoreBadge from "../../assets/iosAppStoreBadge.png";
+import androidDownloadBadge from "../../assets/androidDownloadBadge.png";
+import "../../styles/css/introHeroStyles.css";
 
 export default function IntroHero() {
     return (

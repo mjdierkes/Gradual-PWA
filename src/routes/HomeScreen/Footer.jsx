@@ -1,6 +1,5 @@
-import smallLogo from "./assets/gradualIconSmall.png"
-import "./styles/css/footerStyles.css"
-
+import smallLogo from "../../assets/gradualIconSmall.png"
+import "../../styles/css/footerStyles.css"
 
 export default function Footer() {
     return (

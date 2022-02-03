@@ -1,5 +1,5 @@
-import smallLogo from "./assets/gradualIconSmall.png";
-import "./styles/css/featuresHeroStyles.css";
+import smallLogo from "../../assets/gradualIconSmall.png";
+import "../../styles/css/featuresHeroStyles.css";
 
 export default function FeaturesHero() {
     return (
