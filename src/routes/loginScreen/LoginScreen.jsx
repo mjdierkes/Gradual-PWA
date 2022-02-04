@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import LoginNavbar from "./LoginNavbar";
@@ -13,16 +14,25 @@ function LoginScreen() {
     classes: null
   }
 
+  const [isLoading, setIsLoading] = useState(false);
+  
   let navigate = useNavigate();
 
   const loginFormSubmitted = async (username, password) => {
+    
+    setIsLoading(true);
+
     try {
       await Promise.all([getStudentInfo(username, password), getStudentSchedule(username, password), getStudentGPAs(username, password), getStudentClasses(username, password)])
     } catch {
       return alert("Login Error");
+    } finally {
+      setIsLoading(false);
     }
 
-    return navigate("/dashboard");
+    return navigate("/dashboard", {
+      state: {student: {...student}}
+    });
  };
 
   const getStudentInfo = async(username, password) => {
@@ -60,7 +70,7 @@ function LoginScreen() {
   return (
     <main class="container d-flex flex-column justify-content-center">
       <LoginNavbar />
-      <LoginForm loginFormSubmitted={loginFormSubmitted} />
+      <LoginForm loginFormSubmitted={loginFormSubmitted} isLoading={isLoading}/>
 
     </main>
   );

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import smallLogo from "../assets/gradualIconSmall.png"
 import "../styles/css/navbarStyles.css";
 
-export default function Navbar() {
+export default function MainNavbar() {
   return (
     <nav class="navbar navbar-expand-lg navbar-dark bg-success">
       <div class="container-fluid">

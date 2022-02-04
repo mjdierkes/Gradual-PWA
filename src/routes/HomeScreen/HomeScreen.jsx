@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Navbar from '../Navbar';
+import MainNavbar from '../MainNavbar';
 import IntroHero from './IntroHero';
 import FeaturesHero from './FeaturesHero';
 import Footer from './Footer';
@@ -8,7 +8,7 @@ import Footer from './Footer';
 function App() {
   return (
     <main>
-      <Navbar />
+      <MainNavbar />
 
       <IntroHero />
       <FeaturesHero />

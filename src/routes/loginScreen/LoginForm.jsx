@@ -4,7 +4,7 @@ function LoginForm(props) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
  
-    const { loginFormSubmitted } = props;
+    const { loginFormSubmitted, isLoading } = props;
     
     const handleSubmit = (evt) => {
         evt.preventDefault();
@@ -22,7 +22,9 @@ function LoginForm(props) {
 
 <div class="form-text mb-3">We'll never store any of your information <span style={{color: "#e25555"}}>&#9829;</span></div>
 
-<button type="submit" class="btn btn-primary w-100">Login</button>
+<button type="submit" class="btn btn-dark w-100 rounded">{isLoading ? <div class="spinner-border text-light" style={{width: "1rem", height: "1rem"}} role="status">
+  <span class="visually-hidden">Loading...</span>
+</div> : "Login"}</button>
 </form>
     )
 }
