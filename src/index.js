@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import App from './routes/HomeScreen/HomeScreen';
 import LoginScreen from "./routes/loginScreen/LoginScreen"
+import Dashboard from "./routes/Dashboard/Dashboard"
 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -12,6 +13,7 @@ ReactDOM.render(
     <Routes>
       <Route path="/" element={<App />}/>
       <Route path="/login" element={<LoginScreen />}/>
+      <Route path="/dashboard" element={<Dashboard />}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')
