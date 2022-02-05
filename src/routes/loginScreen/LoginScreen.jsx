@@ -23,9 +23,15 @@ function LoginScreen() {
     setIsLoading(true);
 
     try {
-      await Promise.all([getStudentInfo(username, password), getStudentSchedule(username, password), getStudentGPAs(username, password), getStudentClasses(username, password)])
+      await Promise.all([getStudentInfo(username, password), getStudentSchedule(username, password), getStudentClasses(username, password)])
     } catch {
       return alert("Login Error");
+    } 
+
+    try {
+      await getStudentGPAs(username, password)
+    } catch {
+      console.log("GPA Fetch Error");
     } finally {
       setIsLoading(false);
     }

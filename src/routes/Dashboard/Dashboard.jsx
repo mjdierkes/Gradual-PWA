@@ -10,8 +10,6 @@ export default function Dashboard() {
     const {student} = state;
     const {info, classes} = student
 
-    console.log(student);
-
     return (
         <main>
             <DashboardNavbar info={info}/>
