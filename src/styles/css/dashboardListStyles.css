@@ -7,7 +7,17 @@
 .list-group .list-group-item {
   height: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.badge {
+  width: 5rem;
 }
 
 /*# sourceMappingURL=dashboardListStyles.css.map */

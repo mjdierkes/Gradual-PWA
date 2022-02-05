@@ -1,3 +1,4 @@
+import DashboardListElement from "./DashboardListElement";
 import "../../styles/css/dashboardListStyles.css";
 
 export default function DashboardList(props) {
@@ -9,7 +10,7 @@ export default function DashboardList(props) {
     return (
         <div class="list-group list-group-flush">
             {currentClasses.map((course) => (
-                <a href="/" key={course.name} class="list-group-item list-group-item-action">{course.name}</a>
+                <DashboardListElement key={course.name} name={course.name} grade={course.grade}/>
             ))}
         </div>
     )
