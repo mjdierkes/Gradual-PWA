@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import App from './routes/HomeScreen/HomeScreen';
-import LoginScreen from "./routes/loginScreen/LoginScreen"
-import Dashboard from "./routes/Dashboard/Dashboard"
-import ClassDetails from './routes/ClassDetails/ClassDetails';
+import App from './components/HomeScreen/HomeScreen';
+import LoginScreen from "./components/loginScreen/LoginScreen"
+import Dashboard from "./components/Dashboard/Dashboard"
+import ClassDetails from './components/ClassDetails/ClassDetails';
 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 

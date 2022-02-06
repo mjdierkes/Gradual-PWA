@@ -1,4 +1,3 @@
-import {studentData, currentGPAS, schedule, currentClasses} from "./fakeData.js";
 import { useLocation } from "react-router-dom";
 
 import DashboardNavbar from "./DashboardNavbar.jsx";
