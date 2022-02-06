@@ -8,12 +8,12 @@ export default function Dashboard() {
 
     const { state } = useLocation();
     const {student} = state;
-    const {info, classes} = student
+    const {info, classes, schedule} = student
 
     return (
         <main>
             <DashboardNavbar info={info}/>
-            <DashboardList currentClasses={classes}/>
+            <DashboardList currentClasses={classes} schedule={schedule}/>
         </main>
     )
 }

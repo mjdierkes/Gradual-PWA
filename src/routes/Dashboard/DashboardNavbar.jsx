@@ -4,6 +4,9 @@ export default function DashboardNavbar(props) {
 
     const studentName = info["name"].split(" ")[1];
 
+    const currentHour = new Date().getHours()
+    const greeting = currentHour < 12 ? "Good Morning" : currentHour < 18 ? "Good Afternoon" : "Good Evening";
+
     return (
         <nav class="navbar navbar-light sticky-top bg-light my-0">
         <div class="container-fluid d-flex flex-column">
@@ -19,7 +22,7 @@ export default function DashboardNavbar(props) {
             </div>
 
             <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">Good Afternoon {studentName}</span>
+                <span class="navbar-brand mb-0 h1">{greeting} {studentName}</span>
                 <small class="text-muted">GPA Hidden</small>
             </div>
           

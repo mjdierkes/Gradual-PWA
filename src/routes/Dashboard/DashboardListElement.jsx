@@ -10,14 +10,14 @@ function DashboardListBadge(props) {
 }
 
 export default function DashboardListElement(props) {    
-    const {course} = props
+    const {course, courseInfo} = props
     const { name, grade } = course
  
     let navigate = useNavigate();
 
     const navigateToDetails = () => {
         return navigate("/classdetails", {
-            state: {course: {...course}}
+            state: {course: {...course, info: {...courseInfo}}}
         });
     }
 

@@ -37,7 +37,7 @@ function LoginScreen() {
     }
 
     return navigate("/dashboard", {
-      state: {student: {...student}}
+      state: {student: {...student, schedule: student.schedule}}
     });
  };
 
