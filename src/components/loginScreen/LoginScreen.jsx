@@ -6,7 +6,6 @@ import LoginForm from "./LoginForm";
 import axios from "axios";
          
 function LoginScreen() {
-
   const student = {
     info: null,
     schedule: null,

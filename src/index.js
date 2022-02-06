@@ -6,6 +6,7 @@ import App from './components/HomeScreen/HomeScreen';
 import LoginScreen from "./components/loginScreen/LoginScreen"
 import Dashboard from "./components/Dashboard/Dashboard"
 import ClassDetails from './components/ClassDetails/ClassDetails';
+import ProfileScreen from './components/ProfileScreen/ProfileScreen';
 
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
@@ -16,6 +17,7 @@ ReactDOM.render(
       <Route path="/login" element={<LoginScreen />}/>
       <Route path="/dashboard" element={<Dashboard />}/>
       <Route path="/classdetails" element={<ClassDetails />}/>
+      <Route path="/profile" element={<ProfileScreen />}/>
     </Routes>
   </BrowserRouter>,
   document.getElementById('root')

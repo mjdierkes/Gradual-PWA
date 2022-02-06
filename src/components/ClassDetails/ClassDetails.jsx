@@ -9,19 +9,26 @@ export default function ClassDetails(props) {
     const { state } = useLocation();
     const { course } = state;
 
+    const {name, grade, info} = course;
+
     const majorAssignments = course["assignments"].filter(assignment => assignment["category"] === "Major Grades")
     const minorAssignments = course["assignments"].filter(assignment => assignment["category"] === "Minor Grades")
 
     return (
-        <section>
-
-        <ClassDetailsNavbar courseName={course.name}/>
-        <ClassAssignmentsList category={"Major"} assignments={majorAssignments} />
-        <ClassAssignmentsList category={"Minor"} assignments={minorAssignments} />
+        <section class="d-flex flex-column justify-content-between" style={{height: "100%"}}>
         
-        <p class="text-end px-2" style={{fontSize: "1.2rem"}}>Class Average: {course["grade"]}</p>
+        <div>
+            <ClassDetailsNavbar courseName={name}/>
+            <ClassAssignmentsList category={"Major"} assignments={majorAssignments} />
+            <ClassAssignmentsList category={"Minor"} assignments={minorAssignments} />
+            
+            <p className={"text-end fw-bold px-2 " + (parseFloat(grade) >= 90 ? "text-success" : parseFloat(grade) >= 80 ? "text-warning" : "text-danger")} style={{fontSize: "1.2rem"}}>Class Average: {grade}</p>
+        </div>
 
-        <ClassInformation course={course} info={course.info}/>
+            <div>
+                <ClassInformation course={course} info={info}/>
+            </div>
+
         </section>
     )
 }
