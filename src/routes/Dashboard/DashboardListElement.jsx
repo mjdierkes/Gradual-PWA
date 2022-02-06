@@ -1,27 +1,27 @@
-export default function DashboardListElement(props) {
+import { useNavigate } from "react-router-dom";
 
-    const {name, grade} = props
+function DashboardListBadge(props) {
+    
+    const { grade } = props;
+    
+    return (
+        <span className={"badge rounded-rectangle " + (grade >= 90 ? "bg-success" : grade >= 80 ? "bg-warning" : 'bg-danger')}>{grade}</span>
+    )
+}
 
-    if(parseFloat(grade) >= 90) {
-        return (
-            <div class="list-group-item list-group-item-action">
-                <a href="/">{name}</a>
-                <span class="badge bg-success rounded-rectangle">{grade}</span>
-            </div>
-        )
-    } else if(parseFloat(grade) >= 80) {
-        return (
-        <div class="list-group-item list-group-item-action">
-            <a href="/">{name}</a>
-            <span class="badge bg-warning rounded-rectangle">{grade}</span>
-        </div>
-        )
-    } else {
-        return (
-        <div class="list-group-item list-group-item-action">
-            <a href="/">{name}</a>
-            <span class="badge bg-danger rounded-rectangle">{grade}</span>
-        </div>
-        )
+export default function DashboardListElement(props) {    
+    const {course} = props
+    const { name, grade } = course
+ 
+    let navigate = useNavigate();
+
+    const navigateToDetails = () => {
+        return navigate("/classdetails", {
+            state: {course: {...course}}
+        });
     }
+
+    return (
+        <div class="list-group-item list-group-item-action" onClick={navigateToDetails}>{name} <DashboardListBadge grade={parseFloat(grade)}/></div>
+    )
 }

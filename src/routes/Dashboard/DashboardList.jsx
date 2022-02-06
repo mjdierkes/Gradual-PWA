@@ -10,7 +10,7 @@ export default function DashboardList(props) {
     return (
         <div class="list-group list-group-flush">
             {currentClasses.map((course) => (
-                <DashboardListElement key={course.name} name={course.name} grade={course.grade}/>
+                <DashboardListElement key={course.name} course={course}/>
             ))}
         </div>
     )
