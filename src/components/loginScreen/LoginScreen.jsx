@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 import LoginNavbar from "./LoginNavbar";
@@ -8,6 +8,13 @@ import axios from "axios";
 function LoginScreen() {
   let navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    const student = (JSON.parse(localStorage.getItem('student')))
+    if(student) {navigate("/dashboard", {
+      state: {student: {...student}}
+    })}
+  })
 
   const student = {
     info: null,

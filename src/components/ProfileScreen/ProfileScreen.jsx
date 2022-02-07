@@ -14,6 +14,7 @@ export default function ProfileScreen() {
     const {name} = student;
 
     const navigateToLogin = () => {
+        localStorage.clear();
         navigate("/login")
     }
 
