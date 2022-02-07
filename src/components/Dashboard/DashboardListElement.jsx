@@ -1,20 +1,16 @@
 import { useNavigate } from "react-router-dom";
 
-function DashboardListBadge(props) {
-    
-    const { grade } = props;
-    
+function DashboardListBadge({ grade }) {    
     return (
         <span className={"badge rounded-rectangle " + (grade >= 90 ? "bg-success" : grade >= 80 ? "bg-warning" : 'bg-danger')}>{grade}</span>
     )
 }
 
-export default function DashboardListElement(props) {    
-    const {course, courseInfo} = props
-    const { name, grade } = course
- 
+export default function DashboardListElement({course, courseInfo}) {    
     let navigate = useNavigate();
 
+    const { name, grade } = course
+ 
     const navigateToDetails = () => {
         return navigate("/classdetails", {
             state: {course: {...course, info: {...courseInfo}}}

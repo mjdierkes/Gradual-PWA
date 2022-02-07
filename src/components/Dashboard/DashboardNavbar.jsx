@@ -1,9 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
-export default function DashboardNavbar(props) {
+export default function DashboardNavbar({ info }) {
     let navigate = useNavigate();
-
-    const { info } = props;
 
     const studentName = info["name"].split(" ")[1];
 

@@ -1,9 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function ClassDetailsNavbar(props) {
-
-    const {courseName} = props;
-
+export default function ClassDetailsNavbar({courseName}) {
     const navigate = useNavigate();
 
     return (

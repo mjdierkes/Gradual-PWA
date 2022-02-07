@@ -4,7 +4,7 @@ import ClassDetailsNavbar from "./ClassDetailsNavbar";
 import ClassAssignmentsList from "./ClassAssignmentsList";
 import ClassInformation from "./ClassInformation";
 
-export default function ClassDetails(props) {
+export default function ClassDetails() {
 
     const { state } = useLocation();
     const { course } = state;

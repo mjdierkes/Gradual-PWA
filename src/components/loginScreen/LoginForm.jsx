@@ -1,11 +1,9 @@
 import { useState } from "react";
 
-function LoginForm(props) {
+function LoginForm({ loginFormSubmitted, isLoading }) {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
- 
-    const { loginFormSubmitted, isLoading } = props;
-    
+     
     const handleSubmit = (evt) => {
         evt.preventDefault();
         loginFormSubmitted(username, password);

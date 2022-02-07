@@ -1,10 +1,8 @@
 import DashboardListElement from "./DashboardListElement";
 import "../../styles/css/dashboardListStyles.css";
 
-export default function DashboardList(props) {
-
-    let {currentClasses, schedule} = props;
-
+export default function DashboardList({currentClasses, schedule}) {
+    
     currentClasses.forEach((course) => course.name = course.name.split("-")[1].substring(2).trim());
     
     return (

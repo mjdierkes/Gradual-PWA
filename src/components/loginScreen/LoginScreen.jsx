@@ -6,16 +6,23 @@ import LoginForm from "./LoginForm";
 import axios from "axios";
          
 function LoginScreen() {
+  let navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
+
   const student = {
     info: null,
     schedule: null,
     gpa: null,
     classes: null
   }
-
-  const [isLoading, setIsLoading] = useState(false);
   
-  let navigate = useNavigate();
+  const navigateToDashboard = (student) => {
+    localStorage.setItem('student', JSON.stringify({...student, schedule: student.schedule}));
+
+    return navigate("/dashboard", {
+      state: {student: {...student, schedule: student.schedule}}
+    })
+  }
 
   const loginFormSubmitted = async (username, password) => {
     
@@ -35,9 +42,7 @@ function LoginScreen() {
       setIsLoading(false);
     }
 
-    return navigate("/dashboard", {
-      state: {student: {...student, schedule: student.schedule}}
-    });
+    return navigateToDashboard(student)
  };
 
   const getStudentInfo = async(username, password) => {

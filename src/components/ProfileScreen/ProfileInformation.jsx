@@ -1,6 +1,5 @@
-export default function ProfileInformation(props) {
-
-    const {student} = props
+export default function ProfileInformation({student}) {
+    
     const {grade, id, campus, birthdate, counselor} = student;
 
     return (

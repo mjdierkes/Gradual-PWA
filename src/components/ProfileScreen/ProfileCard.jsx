@@ -1,7 +1,4 @@
-export default function ProfileCard(props) {
-
-    const {name} = props;
-
+export default function ProfileCard({name}) {
     return (
         <div class="card d-flex flex-column align-items-center m-2">
   <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Ski_trail_rating_symbol_black_circle.png" class="card-img-top" alt="..." style={{width: "50px" }} />

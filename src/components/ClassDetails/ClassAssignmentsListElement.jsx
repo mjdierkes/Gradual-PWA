@@ -1,7 +1,4 @@
-export default function ClassAssignmentsListElement(props) {
-
-    const {assignmentName, assignmentScore} = props
-
+export default function ClassAssignmentsListElement({assignmentName, assignmentScore}) {
     return (
         <div class="list-group-item list-group-item-action px-0 w-100">
         <p class="col-8 text-start m-0">{assignmentName}</p>

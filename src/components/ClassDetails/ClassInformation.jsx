@@ -1,7 +1,4 @@
-export default function ClassInformation(props) {
-
-    const { info, course } = props;
-
+export default function ClassInformation({ info, course }) {
     const {teacher, periods} = info
     const {credits, weight} = course
 
