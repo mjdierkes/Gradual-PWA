@@ -53,25 +53,25 @@ function LoginScreen() {
  };
 
   const getStudentInfo = async(username, password) => {
-    var { data } = await axios.get(`http://gradualgrades-env.eba-dkw3kc3t.us-east-2.elasticbeanstalk.com/students/info/${username}/${password}`)
+    var { data } = await axios.get(`https://gradualgrades.herokuapp.com/students/info?username=${username}&password=${password}`)
 
     updateStudentData(data, "info");
   }
 
   const getStudentSchedule = async(username, password) => {
-    var { data } = await axios.get(`http://gradualgrades-env.eba-dkw3kc3t.us-east-2.elasticbeanstalk.com/students/schedule/${username}/${password}`)
+    var { data } = await axios.get(`https://gradualgrades.herokuapp.com/students/schedule?username=${username}&password=${password}`)
 
     updateStudentData(data.schedule, "schedule");
   }
 
   const getStudentGPAs = async(username, password) => {
-    var { data } = await axios.get(`http://gradualgrades-env.eba-dkw3kc3t.us-east-2.elasticbeanstalk.com/students/gpa/${username}/${password}`)
+    var { data } = await axios.get(`https://gradualgrades.herokuapp.com/students/gpa?username=${username}&password=${password}`)
 
     updateStudentData(data, "gpa");
   }
 
   const getStudentClasses = async(username, password) => {
-    var { data } = await axios.get(`http://gradualgrades-env.eba-dkw3kc3t.us-east-2.elasticbeanstalk.com/students/currentclasses/${username}/${password}`)
+    var { data } = await axios.get(`https://gradualgrades.herokuapp.com/students/currentclasses?username=${username}&password=${password}`)
 
     updateStudentData(data.currentClasses, "classes");
   }
