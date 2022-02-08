@@ -20,7 +20,7 @@ export default function IntroHero() {
         <p class="fst-italic">Gradual stores absolutely no user information and is open source for developers to contribute.</p>
         <div class="d-flex appStoreBadgeContainer">
           <Link to="/login"><img src={iosAppStoreBadge} alt="ios download badge" class="appStoreBadge"/></Link>
-          <Link to="/login"><img src={androidDownloadBadge} alt="android download badge" class="appStoreBadge"/></Link>
+          <a href="https://testflight.apple.com/join/OInZfliw"><img src={androidDownloadBadge} alt="android download badge" class="appStoreBadge"/></a>
         </div>
       </div>
     </div>
