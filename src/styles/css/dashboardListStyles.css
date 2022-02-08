@@ -1,3 +1,41 @@
+main {
+  height: 100%;
+}
+
+* {
+  overflow-x: hidden;
+  line-height: 1.5 !important;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.logo-img {
+  margin: 0;
+}
+
+.bg-success {
+  background-color: #30d158 !important;
+}
+
+.bg-warning {
+  background-color: #ffd60a !important;
+}
+
+.bg-danger {
+  background-color: #ff443a !important;
+}
+
+.text-success {
+  color: #30d158 !important;
+}
+
+.text-warning {
+  color: #ffd60a !important;
+}
+
+.text-danger {
+  color: #ff443a !important;
+}
+
 .list-group {
   height: 100%;
   display: flex;
@@ -17,8 +55,9 @@ a {
 }
 
 .badge {
-  width: 5rem;
-  font-size: 0.8rem;
+  width: 6rem;
+  font-size: 1rem;
+  padding: 0.25rem;
 }
 
 /*# sourceMappingURL=dashboardListStyles.css.map */

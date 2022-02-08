@@ -8,8 +8,34 @@ main {
     overflow-x: hidden;
 
     line-height: 1.5 !important;
+
+    font-family: 'Roboto', sans-serif !important;
 }
 
 .logo-img {
     margin: 0;
+}
+
+.bg-success {
+    background-color: #30d158 !important;
+}
+
+.bg-warning {
+    background-color: #ffd60a !important;
+}
+
+.bg-danger {
+    background-color: #ff443a !important;
+}
+
+.text-success {
+    color: #30d158 !important;
+}
+
+.text-warning {
+    color: #ffd60a !important;
+}
+
+.text-danger {
+    color: #ff443a !important;
 }
