@@ -19,8 +19,8 @@ export default function IntroHero() {
         <p class="lead">Gradual allows you to access grades, schedules, GPAs and so much more with the tap of a button!</p>
         <p class="fst-italic">Gradual stores absolutely no user information and is open source for developers to contribute.</p>
         <div class="d-flex appStoreBadgeContainer">
-          <Link to="/login"><img src={iosAppStoreBadge} alt="ios download badge" class="appStoreBadge"/></Link>
-          <a href="https://testflight.apple.com/join/OInZfliw"><img src={androidDownloadBadge} alt="android download badge" class="appStoreBadge"/></a>
+          <a href="https://testflight.apple.com/join/OInZfliw"><img src={iosAppStoreBadge} alt="ios download badge" class="appStoreBadge"/></a>
+          <Link to="/login"><img src={androidDownloadBadge} alt="android download badge" class="appStoreBadge"/></Link>
         </div>
       </div>
     </div>
