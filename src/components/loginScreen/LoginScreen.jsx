@@ -53,25 +53,31 @@ function LoginScreen() {
  };
 
   const getStudentInfo = async(username, password) => {
-    var { data } = await axios.get(`https://gradualgrades.herokuapp.com/students/info?username=${username}&password=${password}`)
+    var { data } = await axios.get(`https://gradual-deploy.vercel.app/students/info?username=${username}&password=${password}`)
+
+    console.log(data);
 
     updateStudentData(data, "info");
   }
 
   const getStudentSchedule = async(username, password) => {
-    var { data } = await axios.get(`https://gradualgrades.herokuapp.com/students/schedule?username=${username}&password=${password}`)
+    var { data } = await axios.get(`https://gradual-deploy.vercel.app/students/schedule?username=${username}&password=${password}`)
+
+    console.log(data);
 
     updateStudentData(data.schedule, "schedule");
   }
 
   const getStudentGPAs = async(username, password) => {
-    var { data } = await axios.get(`https://gradualgrades.herokuapp.com/students/gpa?username=${username}&password=${password}`)
+    var { data } = await axios.get(`https://gradual-deploy.vercel.app/students/gpa?username=${username}&password=${password}`)
+
+    console.log(data);
 
     updateStudentData(data, "gpa");
   }
 
   const getStudentClasses = async(username, password) => {
-    var { data } = await axios.get(`https://gradualgrades.herokuapp.com/students/currentclasses?username=${username}&password=${password}`)
+    var { data } = await axios.get(`https://gradual-deploy.vercel.app/students/currentclasses?username=${username}&password=${password}`)
 
     updateStudentData(data.currentClasses, "classes");
   }
