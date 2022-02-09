@@ -1,0 +1,5 @@
+{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "gradual.life",
+  "Id": "b507427c-10f0-4288-9e41-87790dd4b86c"
+}
